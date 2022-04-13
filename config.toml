@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://keishitsuboi.github.io/"
 # [en, zh-cn, fr, pl, ...] determines default content language
 # [en, zh-cn, fr, pl, ...] 设置默认的语言
 defaultContentLanguage = "en"
@@ -7,11 +7,12 @@ defaultContentLanguage = "en"
 theme = "LoveIt"
 # themes directory
 # 主题目录
-themesDir = "../.."
+themesDir = "themes"
+canonifyurls = true
 
 # website title
 # 网站标题
-title = "LoveIt"
+title = "DARK MATTER"
 
 # whether to use robots.txt
 # 是否使用 robots.txt
@@ -37,7 +38,7 @@ enableEmoji = true
     # [UA-XXXXXXXX-X] google analytics code
     googleAnalytics = ""
     # copyright description used only for seo schema
-    copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+    copyright = "株式会社サイバーディフェンス研究所のエンジニアによるテックブログ"
     # Menu config
     [languages.en.menu]
       [[languages.en.menu.main]]
@@ -46,7 +47,7 @@ enableEmoji = true
         pre = ""
         # you can add extra information after the name (HTML format is supported), such as icons
         post = ""
-        name = "Posts"
+        name = "記事一覧"
         url = "/posts/"
         # title will be shown when you hover on this menu link.
         title = ""
@@ -55,51 +56,48 @@ enableEmoji = true
         identifier = "tags"
         pre = ""
         post = ""
-        name = "Tags"
+        name = "タグ"
         url = "/tags/"
         title = ""
         weight = 2
+      #[[languages.en.menu.main]]
+        #identifier = "categories"
+        #pre = ""
+        #post = ""
+        #name = "カテゴリー"
+        #url = "/categories/"
+        #title = ""
+        #weight = 3
+      #[[languages.en.menu.main]]
+        #pre = ""
+        #post = ""
+        #name = "Docs"
+        #url = "/categories/documentation/"
+        #title = ""
+        #weight = 4
       [[languages.en.menu.main]]
-        identifier = "categories"
-        pre = ""
-        post = ""
-        name = "Categories"
-        url = "/categories/"
-        title = ""
-        weight = 3
-      [[languages.en.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
-      [[languages.en.menu.main]]
-        identifier = "about"
         pre = ""
         post = ""
         name = "About"
         url = "/about/"
         title = ""
-        weight = 5
-      [[languages.en.menu.main]]
-        identifier = "github"
-        pre = "<i class='fab fa-github fa-fw'></i>"
-        post = ""
-        name = ""
-        url = "https://github.com/dillonzq/LoveIt"
-        title = "GitHub"
-        weight = 6
+        weight = 3
+      #[[languages.en.menu.main]]
+        #pre = "<i class='fab fa-github fa-fw'></i>"
+        #post = ""
+        #name = ""
+        #url = "https://github.com/dillonzq/LoveIt"
+        #title = "GitHub"
+        #weight = 6
     [languages.en.params]
       # site description
-      description = "About LoveIt Theme"
+      description = "株式会社サイバーディフェンス研究所のエンジニアによるテックブログ"
       # site keywords
-      keywords = ["Theme", "Hugo"]
+      keywords = ["サイバーセキュリティ", "テックブログ", "セキュリティ診断", "ハードウェア", "IoT", "脆弱性診断", "ペネトレーションテスト"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
-        title = "LoveIt"
+        title = "DARK MATTER"
         # whether to omit favicon resource links
         noFavicon = false
         # modern SVG favicon to use in place of older style .png and .ico files
@@ -141,11 +139,11 @@ enableEmoji = true
           # Gravatar Email for preferred avatar in home page
           gravatarEmail = ""
           # URL of avatar shown in home page
-          avatarURL = "/images/avatar.png"
+          avatarURL = "/images/dark_matter_logo.png"
           # title shown in home page (HTML format is supported)
           title = ""
           # subtitle shown in home page
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+          subtitle = "CDI Engineer's Tech Blog"
           # whether to use typeit animation for subtitle
           typeit = true
           # whether to show social links
@@ -156,18 +154,18 @@ enableEmoji = true
         [languages.en.params.home.posts]
           enable = true
           # special amount of posts in each home posts page
-          paginate = 6
+          paginate = 5
       # Social config in home page
       [languages.en.params.social]
-        GitHub = "xxxx"
+        GitHub = ""
         Linkedin = ""
-        Twitter = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
-        Telegram = "xxxx"
+        Twitter = "cyberdefense_jp"
+        Instagram = ""
+        Facebook = "cyberdefense.jp"
+        Telegram = ""
         Medium = ""
         Gitlab = ""
-        Youtubelegacy = "xxxx"
+        Youtubelegacy = ""
         Youtubecustom = ""
         Youtubechannel = ""
         Tumblr = ""
@@ -220,11 +218,11 @@ enableEmoji = true
         XMPP = ""
         Matrix = ""
         Bilibili = ""
-        Email = "xxxx@xxxx.com"
-        RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
+        Email = "sales@cyberdefense.jp"
+        RSS = false
+        #[languages.en.params.social.Mastodon]
+          #id = ""
+          #prefix = ""
 
   [languages.zh-cn]
     weight = 2
@@ -626,7 +624,7 @@ enableEmoji = true
   version = "0.2.X"
   # site default theme ("light", "dark", "auto")
   # 网站默认主题 ("light", "dark", "auto")
-  defaultTheme = "auto"
+  defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
   gitRepo = "https://github.com/dillonzq/LoveIt"
@@ -638,7 +636,7 @@ enableEmoji = true
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   # 网站图片, 用于 Open Graph 和 Twitter Cards
-  images = ["/logo.png"]
+  images = ["/images/dark_matter_logo.png"]
 
   # Header config
   # 页面头部导航栏配置
@@ -654,13 +652,13 @@ enableEmoji = true
     [params.header.title]
       # URL of the LOGO
       # LOGO 的 URL
-      logo = ""
+      #logo = ""
       # title name
       # 标题名称
-      name = "LoveIt"
+      name = "DARK MATTER"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = "<i class='far fa-kiss-wink-heart fa-fw'></i>"
+      pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
       post = ""
@@ -677,22 +675,22 @@ enableEmoji = true
     custom = ''
     # whether to show Hugo and theme info
     # 是否显示 Hugo 和主题信息
-    hugo = true
+    hugo = false
     # whether to show copyright info
     # 是否显示版权信息
     copyright = true
     # whether to show the author
     # 是否显示作者
-    author = true
+    author = false
     # site creation time
     # 网站创立年份
-    since = 2019
+    since = 2016
     # ICP info only in China (HTML format is supported)
     # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
     icp = ""
     # license info (HTML format is supported)
     # 许可协议信息 (支持 HTML 格式)
-    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    license= '<a rel="license external nofollow noopener noreffer" href="https://www.cyberdefense.jp/" target="_blank">株式会社サイバーディフェンス研究所｜Cyber Defense Institute Inc.</a>'
 
   # Section (all posts) page config
   # Section (所有文章) 页面配置
@@ -823,18 +821,18 @@ enableEmoji = true
       Whatsapp = false
       Pinterest = false
       Tumblr = false
-      HackerNews = true
+      HackerNews = false
       Reddit = false
       VK = false
       Buffer = false
       Xing = false
-      Line = true
+      Line = false
       Instapaper = false
       Pocket = false
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Renren = false
       Myspace = false
       Blogger = false
@@ -851,14 +849,14 @@ enableEmoji = true
       # Disqus comment config (https://disqus.com/)
       # Disqus 评论系统设置 (https://disqus.com/)
       [params.page.comment.disqus]
-        enable = false
+        enable = true
         # Disqus shortname to use Disqus in posts
         # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
         shortname = ""
       # Gitalk comment config (https://github.com/gitalk/gitalk)
       # Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
       [params.page.comment.gitalk]
-        enable = false
+        enable = true
         owner = ""
         repo = ""
         clientId = ""
@@ -897,7 +895,7 @@ enableEmoji = true
         width = "100%"
         numPosts = 10
         appId = ""
-        languageCode = ""
+        languageCode = "ja"
       # Telegram comments config (https://comments.app/)
       # Telegram comments 评论系统设置 (https://comments.app/)
       [params.page.comment.telegram]
@@ -912,11 +910,11 @@ enableEmoji = true
       # Commento comment config (https://commento.io/)
       # Commento comment 评论系统设置 (https://commento.io/)
       [params.page.comment.commento]
-        enable = false
+        enable = true
       # Utterances comment config (https://utteranc.es/)
       # Utterances comment 评论系统设置 (https://utteranc.es/)
       [params.page.comment.utterances]
-        enable = false
+        enable = true
         # owner/repo
         repo = ""
         issueTerm = "pathname"
@@ -946,7 +944,7 @@ enableEmoji = true
       # 出版者信息
       [params.page.seo.publisher]
         name = "xxxx"
-        logoUrl = "/images/avatar.png"
+        logoUrl = "/images/dark_matter_logo.png"
 
   # TypeIt config
   # TypeIt 配置
@@ -1073,7 +1071,7 @@ enableEmoji = true
 # Author config
 # 作者配置
 [author]
-  name = "xxxx"
+  name = ""
   email = ""
   link = ""
 
